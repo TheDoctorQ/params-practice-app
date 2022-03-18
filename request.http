@@ -1,1 +1,9 @@
-GET http://localhost:3000/
+POST http://localhost:3000/caps
+Content-Type: application/json
+
+{
+  "user_input": "make me bigger"
+}
+
+###
+GET http://localhost:3000/caps?input=myturn

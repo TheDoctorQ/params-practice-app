@@ -1,11 +1,13 @@
 class ParamsController < ApplicationController
 
   def caps
-    render json: {message: "#{params[:user_input].upcase}"
+    input = params[:user_input].to_s.upcase
+    render json: input
   end
 
   def segment
-    render json: {message: "#{params[:wildcard].upcase}"
+    input = params[:user_input].upcase
+    render json: input
   end 
 
   def body  
